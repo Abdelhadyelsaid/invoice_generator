@@ -9,13 +9,6 @@ public class InvoiceLine {
     public InvoiceLine() {
     }
 
-    public InvoiceLine(String itemName, String itemPrice, String count, String invoiceNumber) {
-        this.itemName = itemName;
-        this.itemPrice = itemPrice;
-        this.count = count;
-        this.invoiceNumber = invoiceNumber;
-    }
-
     public String getItemName() {
         return itemName;
     }

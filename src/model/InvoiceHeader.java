@@ -1,7 +1,5 @@
 package model;
 
-import java.util.ArrayList;
-
 public class InvoiceHeader {
     private String invoiceNum;
     private String invoiceDate;
@@ -9,14 +7,6 @@ public class InvoiceHeader {
 
     public InvoiceHeader() {
     }
-
-    public InvoiceHeader(String invoiceNum, String invoiceDate, String customerName) {
-        this.invoiceNum = invoiceNum;
-        this.invoiceDate = invoiceDate;
-        this.customerName = customerName;
-    }
-
-    private ArrayList<InvoiceLine> invoiceLines = new ArrayList<InvoiceLine>();
 
     public String getInvoiceNum() {
         return invoiceNum;
@@ -42,21 +32,13 @@ public class InvoiceHeader {
         this.customerName = customerName;
     }
 
-    public ArrayList<InvoiceLine> getInvoiceLines() {
-        return invoiceLines;
-    }
-
-    public void setInvoiceLines(ArrayList<InvoiceLine> invoiceLines) {
-        this.invoiceLines = invoiceLines;
-    }
-
     @Override
     public String toString() {
         return "InvoiceHeader{" +
                 "invoiceNum='" + invoiceNum + '\'' +
                 ", invoiceDate='" + invoiceDate + '\'' +
                 ", customerName='" + customerName + '\'' +
-                ", invoiceLines=" + invoiceLines +
+                //   ", invoiceLines=" + invoiceLines +
                 '}';
     }
 }

@@ -14,10 +14,10 @@ public class MyListener implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         switch (e.getActionCommand()) {
             case "S":
-                file.readFile();
+               // file.writeFile("hamada");
                 break;
             case "O":
-                file.writeFile();
+               // file.readFile();
                 break;
             case "X":
                 System.exit(0);
